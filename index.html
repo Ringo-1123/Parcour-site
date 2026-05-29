@@ -551,7 +551,11 @@ section.contact {
   text-transform: uppercase;
   margin-bottom: 2rem;
   font-weight: 300;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.3s;
 }
+a.contact-label:hover { color: var(--accent-soft); }
 .contact h2 {
   font-family: Georgia, 'Times New Roman', serif;
   font-weight: 400;
@@ -562,19 +566,6 @@ section.contact {
 }
 .contact h2 em { font-style: italic; color: var(--accent-soft); }
 .contact p { max-width: 50ch; margin: 0 auto 3rem; color: var(--text-mid); font-size: 1.05rem; font-weight: 300; }
-.contact-email {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(1.4rem, 3.5vw, 2rem);
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid var(--accent);
-  padding-bottom: 0.3rem;
-  transition: color 0.3s, border-color 0.3s;
-  font-weight: 400;
-  font-style: italic;
-}
-.contact-email:hover { color: var(--accent-soft); border-color: var(--accent-soft); }
-
 footer {
   border-top: 1px solid var(--border);
   padding: 2rem;
@@ -761,10 +752,9 @@ footer {
 </section>
 
 <section class="contact reveal" id="contact">
-  <div class="contact-label">Contact</div>
+  <a href="mailto:raheel@parcour.uk" class="contact-label">Contact</a>
   <h2>Let's <em>talk</em>.</h2>
   <p>Tell us about the problem on your desk &mdash; the asset, the thesis, the decision that won't fit in a spreadsheet. We'll tell you whether we're the right team to embed.</p>
-  <a href="mailto:raheel@parcour.uk" class="contact-email">Contact</a>
 </section>
 
 <footer>
